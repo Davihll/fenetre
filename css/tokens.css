@@ -1,0 +1,68 @@
+/* Fenêtre — Paris
+   Narrative: manifesto (the flight) then proof (the city).
+   Temperature: cool night over the window, warm-white sheet after landing.
+   Fonts: Magazine — Playfair Display, Manrope, IBM Plex Mono, Lora.
+   Motion: high. Native scroll drives the video; the sheet enters on the same gesture.
+
+   Five roles only:
+   brand  #10161c  night ground, frame, footer
+   paper  #ffffff  the sheet that enters, buttons on the film
+   fg     #f3efe6  type on night
+   accent #c4622d  one signal per screen (line, link, focus)
+   ink    #161616  type on the sheet
+
+   Light inversion of the same five, if the sheet ever flips:
+   brand #ffffff · paper #10161c · fg #161616 · accent #c4622d · ink #f3efe6
+*/
+
+:root {
+  --color-brand: #10161c;
+  --color-paper: #ffffff;
+  --color-fg: #f3efe6;
+  --color-accent: #c4622d;
+  --color-ink: #161616;
+
+  --bg: var(--color-brand);
+  --fg: var(--color-fg);
+  --paper: var(--color-paper);
+  --accent: var(--color-accent);
+  --ink: var(--color-ink);
+
+  --selection-bg: var(--color-accent);
+  --selection-fg: var(--color-paper);
+
+  --font-display: "Playfair Display", "Times New Roman", serif;
+  --font-sans: "Manrope", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --font-serif: "Lora", "Times New Roman", serif;
+
+  --fw-h1: 400;
+  --fw-h2: 600;
+  --fw-manifesto: 500;
+
+  --text-eyebrow: 0.72rem;
+  --text-body: 1.0625rem;
+  --text-lead: clamp(1.05rem, 1.5vw, 1.25rem);
+  --text-h2: clamp(2.6rem, 5.4vw, 4.75rem);
+  --text-h1: clamp(3.4rem, 7.4vw, 6.6rem);
+  --text-display: clamp(4.5rem, 18vw, 14rem);
+
+  --u: calc(100cqw / 2360);
+
+  --section-pad: clamp(4.5rem, 10vh, 8rem);
+  --gutter: clamp(1.25rem, 4vw, 4.5rem);
+  --frame: max(12px, calc(1.6 * (0.45vw + 0.45vh)));
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-2: 0.3s;
+  --dur-4: 0.8s;
+  --dur-5: 1.2s;
+
+  --radius-card: 28px;
+  --shadow-sheet: 0 -28px 80px rgba(8, 10, 14, 0.38);
+}
+
+.sheet {
+  --bg: var(--color-paper);
+  --fg: var(--color-ink);
+}

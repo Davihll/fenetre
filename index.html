@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fenêtre — Paris, sem pressa</title>
+  <meta name="description" content="Viagens para Paris desenhadas no seu ritmo. A Fenêtre abre a cidade — o bairro, a mesa, a hora. Agende a sua.">
+  <meta name="theme-color" content="#10161c">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2310161c'/%3E%3Crect x='7' y='7' width='18' height='18' rx='2' fill='none' stroke='%23f3efe6' stroke-width='1.6'/%3E%3Cpath d='M16 7v18M7 16h18' stroke='%23f3efe6' stroke-width='1.2'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Lora:ital,wght@0,400;1,400&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip" href="#viagens">Ir para as viagens</a>
+  <div class="frame" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="logo" href="#voo">Fenêtre</a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Abrir menu">
+      <span></span>
+    </button>
+    <nav class="nav__links" id="nav-panel">
+      <a href="#voo">Início</a>
+      <a href="#viagens">Destinos</a>
+      <a href="#viagens">Viagens</a>
+      <a href="#experiencia">Experiências</a>
+      <a href="#contato">Contato</a>
+      <button class="btn btn--paper" type="button" data-open-book>Agendar</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="story" id="voo" aria-label="A janela para Paris">
+      <div class="story__pin">
+        <div class="flight-media">
+          <div class="flight-crop">
+            <video
+              src="media/voo.mp4"
+              poster="media/poster.jpg"
+              width="1920"
+              height="1080"
+              muted
+              playsinline
+              preload="auto"
+              aria-hidden="true"
+            ></video>
+          </div>
+          <div class="shade" aria-hidden="true"></div>
+          <div class="haze" aria-hidden="true">
+            <span class="haze__blob haze__blob--a"></span>
+            <span class="haze__blob haze__blob--b"></span>
+            <span class="haze__blob haze__blob--c"></span>
+            <span class="haze__blob haze__blob--d"></span>
+          </div>
+        </div>
+
+        <div class="beats">
+          <article class="beat beat--promise">
+            <p class="eyebrow">A promessa</p>
+            <h1 class="display">Paris, <em>sem pressa.</em></h1>
+            <p class="lead">Viagens desenhadas no seu ritmo. O bairro, a mesa, a hora — você escolhe. Nós abrimos a cidade.</p>
+            <button class="btn btn--paper" type="button" data-open-book>Agendar viagem</button>
+          </article>
+
+          <article class="beat" aria-hidden="true" inert>
+            <p class="eyebrow">A janela</p>
+            <p class="display">A cidade chega pela janela.</p>
+            <p class="lead">Antes do mapa, a luz. Antes das ruas, o Sena cortando a manhã.</p>
+          </article>
+
+          <article class="beat" aria-hidden="true" inert>
+            <p class="eyebrow">O ritmo</p>
+            <p class="display">Manhãs suas. Noites suas.</p>
+            <p class="lead">Sem fila obrigatória. Só o que vale a pena ver, comer e ficar.</p>
+          </article>
+
+          <article class="beat" aria-hidden="true" inert>
+            <p class="eyebrow">A cidade</p>
+            <p class="display">Uma Paris só sua.</p>
+            <p class="lead">Íntima, precisa e impossível de confundir com a de mais ninguém.</p>
+          </article>
+        </div>
+
+        <ol class="rail" aria-label="Capítulos do voo">
+          <li><button type="button" data-rail="0" class="is-on">01</button></li>
+          <li><button type="button" data-rail="1">02</button></li>
+          <li><button type="button" data-rail="2">03</button></li>
+          <li><button type="button" data-rail="3">04</button></li>
+        </ol>
+
+        <p class="flight-meta">
+          <span>Janela</span>
+          <span data-beat-label>A promessa</span>
+        </p>
+        <p class="hint">Role <i aria-hidden="true"></i></p>
+        <div class="flight-progress" aria-hidden="true"><span></span></div>
+      </div>
+    </section>
+
+    <section class="sheet" id="viagens" aria-label="A cidade">
+      <div class="tours">
+        <p class="pill"><i aria-hidden="true"></i> A sua viagem</p>
+        <h2 data-reveal>Descubra as viagens mais desejadas</h2>
+        <p class="prose" data-reveal>Três formas de entrar na cidade, no tempo que for seu.</p>
+
+        <div class="fan-stage" data-reveal>
+          <div class="fan" tabindex="0" aria-roledescription="carrossel" aria-label="Viagens em destaque">
+            <article class="tour is-left" data-tour="Arco da Estrela">
+              <img src="media/arco.webp" width="933" height="1400" alt="Arco do Triunfo visto da avenida, sob um céu azul com nuvens.">
+              <div class="tour__shade" aria-hidden="true"></div>
+              <p class="tour__days">3 dias</p>
+              <div class="tour__body">
+                <h3>Arco da Estrela</h3>
+                <p>A avenida abre até o monumento. Você atravessa no seu passo.</p>
+                <button class="btn btn--paper" type="button" data-open-book data-tour="Arco da Estrela">Explorar</button>
+              </div>
+            </article>
+
+            <article class="tour is-center" data-tour="Torre ao crepúsculo" aria-current="true">
+              <img src="media/torre.webp" width="1800" height="1350" alt="Torre Eiffel ao crepúsculo, com o Trocadéro e o céu em pêssego.">
+              <div class="tour__shade" aria-hidden="true"></div>
+              <p class="tour__days">4 dias</p>
+              <div class="tour__body">
+                <h3>Torre ao crepúsculo</h3>
+                <p>O Trocadéro quando o céu vira pêssego e a cidade acende.</p>
+                <button class="btn btn--paper" type="button" data-open-book data-tour="Torre ao crepúsculo">Explorar</button>
+              </div>
+            </article>
+
+            <article class="tour is-right" data-tour="Sena em azul">
+              <img src="media/sena.webp" width="1800" height="1410" alt="Torre Eiffel à beira do Sena, com barcos e um céu azul intenso.">
+              <div class="tour__shade" aria-hidden="true"></div>
+              <p class="tour__days">2 dias</p>
+              <div class="tour__body">
+                <h3>Sena em azul</h3>
+                <p>Barcos, pontes e a margem esquerda, sem relógio no pulso.</p>
+                <button class="btn btn--paper" type="button" data-open-book data-tour="Sena em azul">Explorar</button>
+              </div>
+            </article>
+          </div>
+          <p class="caption">Arco do Triunfo, Torre Eiffel ao crepúsculo e o Sena — a cidade, de três lados.</p>
+          <div class="pager">
+            <button class="pager__icon" type="button" data-fan="-1" aria-label="Viagem anterior">
+              <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 L5 8 L10 13" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+            </button>
+            <button class="pager__more" type="button" data-fan="1">
+              Ver mais viagens
+              <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3 L11 8 L6 13" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+            </button>
+          </div>
+          <p class="sr" data-fan-live aria-live="polite"></p>
+        </div>
+      </div>
+
+      <div class="about" id="experiencia">
+        <div class="about__head" data-reveal>
+          <p class="eyebrow">Sobre Paris</p>
+          <p class="about__lead">Paris é mais do que um destino — é um ritmo. Do Marais ao Sena, cada viagem aproxima você da cidade, da mesa e das pessoas.</p>
+        </div>
+        <div class="about__grid">
+          <article class="panel" data-reveal>
+            <svg viewBox="0 0 240 72" fill="none" aria-hidden="true">
+              <path d="M8 52 C 60 52, 70 16, 120 16 S 180 52, 232 20" stroke="#f3efe6" stroke-width="1.2" stroke-dasharray="3 5"/>
+              <circle cx="8" cy="52" r="3.5" fill="#c4622d"/>
+              <circle cx="232" cy="20" r="3.5" fill="#f3efe6"/>
+            </svg>
+            <div>
+              <p>Viagens feitas no seu passo. Os cartões-postais, vistos com calma — e os lugares que não cabem neles.</p>
+              <button class="btn btn--paper" type="button" data-open-book data-tour="Sob medida" style="margin-top:1.25rem">Sob medida</button>
+            </div>
+          </article>
+
+          <figure class="portrait" data-reveal>
+            <img src="media/torre.webp" width="1800" height="1350" alt="Pessoas no Trocadéro, de frente para a Torre Eiffel no fim da tarde." data-parallax-speed="0.08">
+            <figcaption>
+              <strong>Feita para você</strong>
+              <em>Trocadéro, quando o dia entrega a cidade.</em>
+            </figcaption>
+          </figure>
+
+          <article class="stats" data-reveal>
+            <div>
+              <p class="stats__kicker">Como a cidade se prova</p>
+              <strong>4</strong>
+              <p>estações abertas</p>
+            </div>
+            <div>
+              <div class="meter"><span>Mesa</span><span class="dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><b>5</b></div>
+              <div class="meter"><span>Rua</span><span class="dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><b>4</b></div>
+              <div class="meter"><span>Museu</span><span class="dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><b>3</b></div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="numbers" data-reveal>
+        <p><strong>48h</strong><span>As primeiras horas, sem pressa</span></p>
+        <p><strong>12</strong><span>Bairros para se perder</span></p>
+        <p><strong>3</strong><span>Roteiros prontos para começar</span></p>
+        <p><strong>1</strong><span>Promessa, feita para você</span></p>
+      </div>
+
+      <div class="manifesto">
+        <p class="eyebrow"><i aria-hidden="true"></i> Manifesto</p>
+        <h2 data-split>A cidade espera. Você decide quando chegar.</h2>
+      </div>
+
+      <div class="cta-cluster">
+        <button class="btn btn--ink" type="button" data-open-book>Agendar viagem</button>
+        <a class="btn btn--ghost" href="mailto:ola@fenetre.paris">Escrever</a>
+      </div>
+
+      <div class="wordmark-block" aria-hidden="true">
+        <p class="wordmark">Paris</p>
+      </div>
+
+      <footer class="colophon" id="contato">
+        <a class="logo" href="#voo">Fenêtre</a>
+        <div>
+          <p>v1.0 · 2026</p>
+          <p><a href="mailto:ola@fenetre.paris">ola@fenetre.paris</a></p>
+        </div>
+        <p class="credits">Fotografias · Unsplash<br>Bastien NVS, Fabien Maurin, J. C.</p>
+      </footer>
+    </section>
+  </main>
+
+  <dialog id="agendar" aria-labelledby="book-title">
+    <div class="book">
+      <div class="book__top">
+        <div>
+          <p class="eyebrow">Agendamento</p>
+          <h2 id="book-title">Reserve o seu ritmo.</h2>
+        </div>
+        <button class="book__x" type="button" data-close aria-label="Fechar">×</button>
+      </div>
+      <form>
+        <label>
+          <span>Nome</span>
+          <input name="nome" type="text" autocomplete="name" required>
+        </label>
+        <label>
+          <span>E-mail</span>
+          <input name="email" type="email" autocomplete="email" required>
+        </label>
+        <div class="book__row">
+          <label>
+            <span>Chegada</span>
+            <input name="chegada" type="date" required>
+          </label>
+          <label>
+            <span>Partida</span>
+            <input name="partida" type="date">
+          </label>
+        </div>
+        <label>
+          <span>Viagem</span>
+          <select name="viagem">
+            <option>Sob medida</option>
+            <option>Arco da Estrela</option>
+            <option>Torre ao crepúsculo</option>
+            <option>Sena em azul</option>
+          </select>
+        </label>
+        <label>
+          <span>Nota</span>
+          <textarea name="nota" placeholder="O que não pode faltar."></textarea>
+        </label>
+        <p class="book__error" role="alert"></p>
+        <button class="btn btn--ink" type="submit">Reservar datas</button>
+      </form>
+      <div class="book__ok" hidden>
+        <p class="eyebrow">Recebido</p>
+        <h3>A janela está aberta.</h3>
+        <p>Escrevemos em até um dia útil com datas e um primeiro desenho da viagem.</p>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="js/site.js"></script>
+  <script>
+    document.querySelector("[data-close]").addEventListener("click", () => {
+      document.querySelector("#agendar").close();
+    });
+  </script>
+</body>
+</html>
